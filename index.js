@@ -6,10 +6,10 @@ document.querySelector("#rain").addEventListener("click", playRain);
 document.querySelector("#thunder").addEventListener("click", playThunder);
 document.querySelector("#ocean").addEventListener("click", playOceanSound);
 document.querySelector("#morning").addEventListener("click", playMorningSound);
-const rain = new Audio("rain.wav");
-const thunder = new Audio("thunder.wav");
-const ocean = new Audio("ocean.wav");
-const morningbird = new Audio("morning.wav");
+const rain = new Audio("audios/rain.wav");
+const thunder = new Audio("audios/thunder.wav");
+const ocean = new Audio("audios/ocean.wav");
+const morningbird = new Audio("audios/morning.wav");
 
 function playRain() {
   if (rain.paused) {
