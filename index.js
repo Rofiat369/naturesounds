@@ -22,36 +22,34 @@ function playRain() {
 }
 
 function playThunder() {
-    if(thunder.paused){
-        thunder.play();
-  rain.pause();
-  ocean.pause();
-  morningbird.pause();
-    } else {
-        thunder.pause();
-    }
+  if (thunder.paused) {
+    thunder.play();
+    rain.pause();
+    ocean.pause();
+    morningbird.pause();
+  } else {
+    thunder.pause();
+  }
 }
 
 function playOceanSound() {
-    if(ocean.paused){
-        ocean.play();
-        thunder.pause();
-        rain.pause();
-        morningbird.pause();
-    } else {
-        ocean.pause();
-    }
-  
+  if (ocean.paused) {
+    ocean.play();
+    thunder.pause();
+    rain.pause();
+    morningbird.pause();
+  } else {
+    ocean.pause();
+  }
 }
 
 function playMorningSound() {
-    if(morningbird.paused){
-        morningbird.play();
-        rain.pause();
-        thunder.pause();
-        ocean.pause();
-    } else {
-        morningbird.pause();
-    }
-  
+  if (morningbird.paused) {
+    morningbird.play();
+    rain.pause();
+    thunder.pause();
+    ocean.pause();
+  } else {
+    morningbird.pause();
+  }
 }
