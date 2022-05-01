@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#natureVideo{
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    bottom: 0; 
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.content{
+    position: relative;
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h2{
+    margin-top: 30vh;
+    text-decoration: underline;
+    color: #FAF2DA;
+}
+
+button{
+    background: #4A503D;
+    color: #E28F83;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 50px 10px;
+}
