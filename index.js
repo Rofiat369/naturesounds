@@ -10,30 +10,48 @@ const thunder = new Audio("thunder.wav");
 const ocean = new Audio("ocean.wav");
 const morningbird = new Audio("morning.wav");
 
-function playRain(){
+function playRain() {
+  if (rain.paused) {
     rain.play();
     thunder.pause();
     ocean.pause();
     morningbird.pause();
+  } else {
+    rain.pause();
+  }
 }
 
-function playThunder(){
-    thunder.play();
-    rain.pause();
-    ocean.pause();
-    morningbird.pause();
+function playThunder() {
+    if(thunder.paused){
+        thunder.play();
+  rain.pause();
+  ocean.pause();
+  morningbird.pause();
+    } else {
+        thunder.pause();
+    }
 }
 
-function playOceanSound(){
-    ocean.play();
-    thunder.pause();
-    rain.pause();
-    morningbird.pause();
+function playOceanSound() {
+    if(ocean.paused){
+        ocean.play();
+        thunder.pause();
+        rain.pause();
+        morningbird.pause();
+    } else {
+        ocean.pause();
+    }
+  
 }
 
-function playMorningSound(){
-    morningbird.play();
-    rain.pause();
-    thunder.pause();
-    ocean.pause();
+function playMorningSound() {
+    if(morningbird.paused){
+        morningbird.play();
+        rain.pause();
+        thunder.pause();
+        ocean.pause();
+    } else {
+        morningbird.pause();
+    }
+  
 }
