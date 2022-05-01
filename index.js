@@ -1,5 +1,6 @@
 //select a sound to play
 //when a sound is selected others should stop playing
+//click sound for pause and play
 
 document.querySelector("#rain").addEventListener("click", playRain);
 document.querySelector("#thunder").addEventListener("click", playThunder);
